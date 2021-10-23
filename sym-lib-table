@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name TDC1000)(type Legacy)(uri C:/Users/user/Desktop/Weather-Station-PCB/TDC1000PW.lib)(options "")(descr ""))
+  (lib (name TDC7200)(type Legacy)(uri C:/Users/user/Desktop/Weather-Station-PCB/TDC7200PW.lib)(options "")(descr ""))
+)
