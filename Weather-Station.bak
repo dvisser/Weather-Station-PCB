@@ -269,39 +269,6 @@ LNAOUT
 Text GLabel 5100 7200 0    50   Input ~ 0
 PGAOUT
 $Comp
-L power:VDD #PWR?
-U 1 1 617A8824
-P 7250 3500
-F 0 "#PWR?" H 7250 3350 50  0001 C CNN
-F 1 "VDD" H 7267 3673 50  0000 C CNN
-F 2 "" H 7250 3500 50  0001 C CNN
-F 3 "" H 7250 3500 50  0001 C CNN
-	1    7250 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VDD #PWR?
-U 1 1 617A8DCC
-P 7950 4050
-F 0 "#PWR?" H 7950 3900 50  0001 C CNN
-F 1 "VDD" H 7967 4223 50  0000 C CNN
-F 2 "" H 7950 4050 50  0001 C CNN
-F 3 "" H 7950 4050 50  0001 C CNN
-	1    7950 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VDD #PWR?
-U 1 1 617A9044
-P 8300 4050
-F 0 "#PWR?" H 8300 3900 50  0001 C CNN
-F 1 "VDD" H 8317 4223 50  0000 C CNN
-F 2 "" H 8300 4050 50  0001 C CNN
-F 3 "" H 8300 4050 50  0001 C CNN
-	1    8300 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 617A92FC
 P 6200 6750
@@ -1126,28 +1093,6 @@ $EndComp
 Connection ~ 5450 2500
 Text Notes 6550 2350 0    50   ~ 0
 LP2985 VIN(min) is approx 3.85V.\nShould be safe for 18650.
-$Comp
-L Regulator_Linear:LP2980-ADJ U?
-U 1 1 618CD7F8
-P 6250 1400
-F 0 "U?" H 6000 1650 50  0000 C CNN
-F 1 "LP2980IM5-ADJ" H 6600 1150 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 6250 1900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lp2980-adj.pdf" H 6250 1700 50  0001 C CNN
-	1    6250 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 618E845A
-P 6250 1700
-F 0 "#PWR?" H 6250 1450 50  0001 C CNN
-F 1 "GND" H 6255 1527 50  0000 C CNN
-F 2 "" H 6250 1700 50  0001 C CNN
-F 3 "" H 6250 1700 50  0001 C CNN
-	1    6250 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 2600 5750 2600
 Wire Wire Line
@@ -1155,188 +1100,6 @@ Wire Wire Line
 Connection ~ 5750 2500
 Wire Wire Line
 	5750 2500 5450 2500
-$Comp
-L Device:C_Small C?
-U 1 1 618F5273
-P 5450 1500
-F 0 "C?" H 5542 1546 50  0000 L CNN
-F 1 "1uF" H 5542 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5450 1500 50  0001 C CNN
-F 3 "~" H 5450 1500 50  0001 C CNN
-	1    5450 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 618F5279
-P 5450 1600
-F 0 "#PWR?" H 5450 1350 50  0001 C CNN
-F 1 "GND" H 5455 1427 50  0000 C CNN
-F 2 "" H 5450 1600 50  0001 C CNN
-F 3 "" H 5450 1600 50  0001 C CNN
-	1    5450 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 1300 5750 1300
-Wire Wire Line
-	5450 1300 5450 1400
-$Comp
-L power:+BATT #PWR?
-U 1 1 618F5281
-P 5450 1300
-F 0 "#PWR?" H 5450 1150 50  0001 C CNN
-F 1 "+BATT" H 5465 1473 50  0000 C CNN
-F 2 "" H 5450 1300 50  0001 C CNN
-F 3 "" H 5450 1300 50  0001 C CNN
-	1    5450 1300
-	1    0    0    -1  
-$EndComp
-Connection ~ 5450 1300
-Wire Wire Line
-	5850 1400 5750 1400
-Wire Wire Line
-	5750 1400 5750 1300
-Connection ~ 5750 1300
-Wire Wire Line
-	5750 1300 5450 1300
-$Comp
-L Device:C_Small C?
-U 1 1 618FC417
-P 8600 1500
-F 0 "C?" H 8692 1546 50  0000 L CNN
-F 1 "1uF" H 8692 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8600 1500 50  0001 C CNN
-F 3 "~" H 8600 1500 50  0001 C CNN
-	1    8600 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 618FC41D
-P 8950 1500
-F 0 "C?" H 9042 1546 50  0000 L CNN
-F 1 "10uF" H 9042 1455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8950 1500 50  0001 C CNN
-F 3 "~" H 8950 1500 50  0001 C CNN
-	1    8950 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 618FC423
-P 8600 1600
-F 0 "#PWR?" H 8600 1350 50  0001 C CNN
-F 1 "GND" H 8605 1427 50  0000 C CNN
-F 2 "" H 8600 1600 50  0001 C CNN
-F 3 "" H 8600 1600 50  0001 C CNN
-	1    8600 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 618FC429
-P 8950 1600
-F 0 "#PWR?" H 8950 1350 50  0001 C CNN
-F 1 "GND" H 8955 1427 50  0000 C CNN
-F 2 "" H 8950 1600 50  0001 C CNN
-F 3 "" H 8950 1600 50  0001 C CNN
-	1    8950 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 1400 8600 1300
-Wire Wire Line
-	8950 1400 8950 1300
-Wire Wire Line
-	8950 1300 8600 1300
-$Comp
-L power:VDD #PWR?
-U 1 1 61908DD0
-P 8950 1300
-F 0 "#PWR?" H 8950 1150 50  0001 C CNN
-F 1 "VDD" H 8967 1473 50  0000 C CNN
-F 2 "" H 8950 1300 50  0001 C CNN
-F 3 "" H 8950 1300 50  0001 C CNN
-	1    8950 1300
-	1    0    0    -1  
-$EndComp
-Connection ~ 8950 1300
-Wire Wire Line
-	6650 1300 8300 1300
-Connection ~ 8600 1300
-$Comp
-L Device:R_Small R?
-U 1 1 61917FE5
-P 7400 1700
-F 0 "R?" H 7459 1746 50  0000 L CNN
-F 1 "51.1k" H 7459 1655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 7400 1700 50  0001 C CNN
-F 3 "~" H 7400 1700 50  0001 C CNN
-	1    7400 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6191820B
-P 7400 1800
-F 0 "#PWR?" H 7400 1550 50  0001 C CNN
-F 1 "GND" H 7405 1627 50  0000 C CNN
-F 2 "" H 7400 1800 50  0001 C CNN
-F 3 "" H 7400 1800 50  0001 C CNN
-	1    7400 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 61920726
-P 8050 1500
-F 0 "R?" V 7950 1500 50  0000 C CNN
-F 1 "115k" V 8150 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 8050 1500 50  0001 C CNN
-F 3 "~" H 8050 1500 50  0001 C CNN
-	1    8050 1500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8150 1500 8300 1500
-Wire Wire Line
-	8300 1500 8300 1300
-Connection ~ 8300 1300
-Wire Wire Line
-	8300 1300 8600 1300
-$Comp
-L Device:C_Small C?
-U 1 1 6193DD9B
-P 8050 1800
-F 0 "C?" V 7950 1750 50  0000 L CNN
-F 1 "6.8pF" V 8150 1700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 8050 1800 50  0001 C CNN
-F 3 "~" H 8050 1800 50  0001 C CNN
-	1    8050 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8150 1800 8300 1800
-Wire Wire Line
-	8300 1800 8300 1500
-Connection ~ 8300 1500
-Wire Wire Line
-	7950 1800 7800 1800
-Wire Wire Line
-	7800 1800 7800 1500
-Wire Wire Line
-	7800 1500 7950 1500
-Wire Wire Line
-	7800 1500 7400 1500
-Connection ~ 7800 1500
-Wire Wire Line
-	6650 1400 7400 1400
-Wire Wire Line
-	7400 1400 7400 1500
-Wire Wire Line
-	7400 1600 7400 1500
-Connection ~ 7400 1500
 Text Notes 3050 2450 0    50   ~ 0
 100mA\nCharge Rate
 Wire Wire Line
@@ -1514,16 +1277,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22036b.pdf" H 2400 2200 50 
 	1    2650 1950
 	1    0    0    -1  
 $EndComp
-Text Notes 7050 1200 0    50   ~ 0
-LP2980 Vout = 3.98V @ 50mA\nVout = 1.225+(1.225(Radj/51.5k))\nVdropout = 150mV so will drop out\nat 3.83V
-Wire Notes Line
-	5250 2050 9300 2050
-Wire Notes Line
-	9300 2050 9300 800 
-Wire Notes Line
-	9300 800  5250 800 
-Wire Notes Line
-	5250 800  5250 2050
 Wire Notes Line
 	5250 2100 8300 2100
 Wire Notes Line
@@ -1550,4 +1303,37 @@ Wire Notes Line
 	10100 6600 10100 7950
 Wire Notes Line
 	10100 7950 8250 7950
+$Comp
+L power:+BATT #PWR?
+U 1 1 617DD35F
+P 7250 3500
+F 0 "#PWR?" H 7250 3350 50  0001 C CNN
+F 1 "+BATT" H 7265 3673 50  0000 C CNN
+F 2 "" H 7250 3500 50  0001 C CNN
+F 3 "" H 7250 3500 50  0001 C CNN
+	1    7250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 617DDAB6
+P 7950 4050
+F 0 "#PWR?" H 7950 3900 50  0001 C CNN
+F 1 "+BATT" H 7965 4223 50  0000 C CNN
+F 2 "" H 7950 4050 50  0001 C CNN
+F 3 "" H 7950 4050 50  0001 C CNN
+	1    7950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR?
+U 1 1 617DDE91
+P 8300 4050
+F 0 "#PWR?" H 8300 3900 50  0001 C CNN
+F 1 "+BATT" H 8315 4223 50  0000 C CNN
+F 2 "" H 8300 4050 50  0001 C CNN
+F 3 "" H 8300 4050 50  0001 C CNN
+	1    8300 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
