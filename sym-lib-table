@@ -1,5 +1,7 @@
 (sym_lib_table
-  (lib (name TDC1000)(type Legacy)(uri C:/Users/user/Desktop/Weather-Station-PCB/TDC1000PW.lib)(options "")(descr ""))
-  (lib (name TDC7200)(type Legacy)(uri C:/Users/user/Desktop/Weather-Station-PCB/TDC7200PW.lib)(options "")(descr ""))
+  (lib (name TDC1000)(type Legacy)(uri ${KIPRJMOD}/TDC1000PW.lib)(options "")(descr ""))
+  (lib (name TDC7200)(type Legacy)(uri ${KIPRJMOD}/TDC7200PW.lib)(options "")(descr ""))
   (lib (name SiT8918AE)(type Legacy)(uri ${KIPRJMOD}/SiT8918AE.lib)(options "")(descr ""))
+  (lib (name WemosS2)(type Legacy)(uri ${KIPRJMOD}/WEMOS_S2.lib)(options "")(descr ""))
+  (lib (name TPS3700DDCR)(type Legacy)(uri ${KIPRJMOD}/TPS3700DDCR.lib)(options "")(descr ""))
 )

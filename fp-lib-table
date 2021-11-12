@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name "TDC Libs")(type KiCad)(uri C:/Users/user/Desktop/Weather-Station-PCB)(options "")(descr ""))
+  (lib (name "Custom Libs")(type KiCad)(uri C:/Users/user/Desktop/Weather-Station-PCB)(options "")(descr ""))
 )
