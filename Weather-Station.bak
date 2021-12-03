@@ -1544,10 +1544,8 @@ Wire Wire Line
 	9200 4950 9300 4950
 Text Notes 4500 3350 0    50   ~ 0
 Vhigh = 4.4V approx.\nVlow = 3.375V approx.
-Text GLabel 11750 7550 0    50   Input ~ 0
-BATTVMON
-Text GLabel 6000 2950 2    50   Output ~ 0
-BATTVMON
+Text GLabel 11750 7750 0    50   Input ~ 0
+A3
 $Comp
 L Device:R_Small R?
 U 1 1 61A81642
@@ -1655,56 +1653,25 @@ Wire Wire Line
 $Comp
 L Device:D_Photo D?
 U 1 1 619F7CEC
-P 14200 3150
-F 0 "D?" V 14104 3308 50  0000 L CNN
-F 1 "PDB-C139" V 14195 3308 50  0000 L CNN
-F 2 "" H 14150 3150 50  0001 C CNN
-F 3 "~" H 14150 3150 50  0001 C CNN
-	1    14200 3150
+P 14200 2550
+F 0 "D?" V 14104 2708 50  0000 L CNN
+F 1 "PDB-C139" V 14195 2708 50  0000 L CNN
+F 2 "" H 14150 2550 50  0001 C CNN
+F 3 "~" H 14150 2550 50  0001 C CNN
+	1    14200 2550
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 619F8699
-P 14200 3450
-F 0 "R?" H 14259 3496 50  0000 L CNN
-F 1 "470R" H 14259 3405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 14200 3450 50  0001 C CNN
-F 3 "~" H 14200 3450 50  0001 C CNN
-	1    14200 3450
+P 13900 2500
+F 0 "R?" H 13959 2546 50  0000 L CNN
+F 1 "470R" H 13959 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 13900 2500 50  0001 C CNN
+F 3 "~" H 13900 2500 50  0001 C CNN
+	1    13900 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 619F9126
-P 14200 3550
-F 0 "#PWR?" H 14200 3300 50  0001 C CNN
-F 1 "GND" H 14205 3377 50  0000 C CNN
-F 2 "" H 14200 3550 50  0001 C CNN
-F 3 "" H 14200 3550 50  0001 C CNN
-	1    14200 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 619F9743
-P 14200 2950
-F 0 "#PWR?" H 14200 2800 50  0001 C CNN
-F 1 "+3V3" H 14215 3123 50  0000 C CNN
-F 2 "" H 14200 2950 50  0001 C CNN
-F 3 "" H 14200 2950 50  0001 C CNN
-	1    14200 2950
-	1    0    0    -1  
-$EndComp
-Text GLabel 14000 3300 0    50   Output ~ 0
-SOLARIRRAD
-Wire Wire Line
-	14200 3350 14200 3300
-Wire Wire Line
-	14000 3300 14200 3300
-Connection ~ 14200 3300
-Wire Wire Line
-	14200 3300 14200 3250
 $Comp
 L Analog_ADC:ADS1115IDGS U?
 U 1 1 619F853B
@@ -1901,10 +1868,188 @@ Wire Wire Line
 Wire Wire Line
 	12350 7050 12350 6700
 Connection ~ 12350 6700
-Text GLabel 11750 7450 0    50   Input ~ 0
-SOLARIRRAD
 Wire Wire Line
 	11750 7450 11950 7450
+Text GLabel 14050 6650 0    50   BiDi ~ 0
+SDA
+Text GLabel 14050 6550 0    50   Input ~ 0
+SCL
+$Comp
+L power:GND #PWR?
+U 1 1 61B4FAA0
+P 14200 6850
+F 0 "#PWR?" H 14200 6600 50  0001 C CNN
+F 1 "GND" H 14205 6677 50  0000 C CNN
+F 2 "" H 14200 6850 50  0001 C CNN
+F 3 "" H 14200 6850 50  0001 C CNN
+	1    14200 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61B4FAA6
+P 14200 6350
+F 0 "#PWR?" H 14200 6200 50  0001 C CNN
+F 1 "+3V3" H 14215 6523 50  0000 C CNN
+F 2 "" H 14200 6350 50  0001 C CNN
+F 3 "" H 14200 6350 50  0001 C CNN
+	1    14200 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J?
+U 1 1 61B4FAAC
+P 14600 6550
+F 0 "J?" H 14550 6750 50  0000 L CNN
+F 1 "BME280 Sensor" H 14300 6250 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 14600 6550 50  0001 C CNN
+F 3 "~" H 14600 6550 50  0001 C CNN
+	1    14600 6550
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	11750 7550 11950 7550
+	14400 6450 14200 6450
+Wire Wire Line
+	14200 6450 14200 6350
+Wire Wire Line
+	14400 6550 14050 6550
+Wire Wire Line
+	14050 6650 14400 6650
+Wire Wire Line
+	14400 6750 14200 6750
+Wire Wire Line
+	14200 6750 14200 6850
+Wire Wire Line
+	11750 7750 11950 7750
+Text GLabel 11750 7450 0    50   Input ~ 0
+A0
+Text GLabel 11750 7550 0    50   Input ~ 0
+A1
+Wire Wire Line
+	11950 7550 11750 7550
+Text GLabel 13700 2350 0    50   Output ~ 0
+A0
+Text GLabel 13700 2650 0    50   Output ~ 0
+A1
+Wire Wire Line
+	14200 2650 13900 2650
+Wire Wire Line
+	13900 2650 13900 2600
+Wire Wire Line
+	14200 2350 13900 2350
+Wire Wire Line
+	13900 2350 13900 2400
+Wire Wire Line
+	13700 2350 13900 2350
+Connection ~ 13900 2350
+Wire Wire Line
+	13700 2650 13900 2650
+Connection ~ 13900 2650
+$Comp
+L TMP36GT9Z:TMP36GT9Z RT?
+U 1 1 61B2AD8B
+P 14000 3200
+F 0 "RT?" H 14728 3146 50  0000 L CNN
+F 1 "TMP36GT9Z" H 14728 3055 50  0000 L CNN
+F 2 "TO-92" H 14750 3300 50  0001 L CNN
+F 3 "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-4/sf-00085637.pdf" H 14750 3200 50  0001 L CNN
+F 4 "TMP36GT9Z, Temperature Sensor +/-3C Serial-2 Wire 2.7  5.5 V 3-Pin TO-92" H 14750 3100 50  0001 L CNN "Description"
+F 5 "" H 14750 3000 50  0001 L CNN "Height"
+F 6 "Analog Devices" H 14750 2900 50  0001 L CNN "Manufacturer_Name"
+F 7 "TMP36GT9Z" H 14750 2800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "584-TMP36GT9Z" H 14750 2700 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/TMP36GT9Z?qs=WIvQP4zGanhT97N47MSoHw%3D%3D" H 14750 2600 50  0001 L CNN "Mouser Price/Stock"
+F 10 "TMP36GT9Z" H 14750 2500 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/tmp36gt9z/analog-devices?region=nac" H 14750 2400 50  0001 L CNN "Arrow Price/Stock"
+	1    14000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B2C44F
+P 13900 3500
+F 0 "#PWR?" H 13900 3250 50  0001 C CNN
+F 1 "GND" H 13905 3327 50  0000 C CNN
+F 2 "" H 13900 3500 50  0001 C CNN
+F 3 "" H 13900 3500 50  0001 C CNN
+	1    13900 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 3500 13900 3200
+Wire Wire Line
+	13900 3200 14000 3200
+Text GLabel 11750 7650 0    50   Input ~ 0
+A2
+Text GLabel 13700 3300 0    50   Output ~ 0
+A2
+Wire Wire Line
+	13700 3300 14000 3300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61B45FB8
+P 13800 3100
+F 0 "#PWR?" H 13800 2950 50  0001 C CNN
+F 1 "+3V3" H 13815 3273 50  0000 C CNN
+F 2 "" H 13800 3100 50  0001 C CNN
+F 3 "" H 13800 3100 50  0001 C CNN
+	1    13800 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 3400 13800 3400
+Wire Wire Line
+	13800 3400 13800 3100
+Wire Wire Line
+	11950 7650 11750 7650
+Text GLabel 6000 2950 2    50   Output ~ 0
+A3
+Wire Wire Line
+	9300 3600 8950 3600
+Wire Wire Line
+	8950 3700 9300 3700
+Text GLabel 8950 3700 0    50   Output ~ 0
+TX
+Text GLabel 8950 3600 0    50   Input ~ 0
+RX
+Text GLabel 9100 4550 0    50   Input ~ 0
+MISO
+Text GLabel 10300 4450 2    50   Output ~ 0
+MOSI
+Text GLabel 10300 4550 2    50   Output ~ 0
+SCK
+Text GLabel 9100 4650 0    50   Output ~ 0
+TDC1000CSB
+Text GLabel 10300 4650 2    50   Output ~ 0
+TDC7200CSB
+Text GLabel 8950 3800 0    50   Output ~ 0
+TDC1000EN
+Text GLabel 8950 3900 0    50   Output ~ 0
+TDC7200EN
+Text GLabel 10300 3900 2    50   Output ~ 0
+TDC1000RESET
+Text GLabel 10300 3800 2    50   Input ~ 0
+ERRB
+Text GLabel 10300 4000 2    50   Input ~ 0
+TDC7200INT
+Wire Wire Line
+	10300 4650 10100 4650
+Wire Wire Line
+	10300 4550 10100 4550
+Wire Wire Line
+	10300 4450 10100 4450
+Wire Wire Line
+	9300 4550 9100 4550
+Wire Wire Line
+	9300 4650 9100 4650
+Wire Wire Line
+	10300 3800 10100 3800
+Wire Wire Line
+	10300 3900 10100 3900
+Wire Wire Line
+	10300 4000 10100 4000
+Wire Wire Line
+	9300 3800 8950 3800
+Wire Wire Line
+	8950 3900 9300 3900
 $EndSCHEMATC

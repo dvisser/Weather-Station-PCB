@@ -4,4 +4,5 @@
   (lib (name SiT8918AE)(type Legacy)(uri ${KIPRJMOD}/SiT8918AE.lib)(options "")(descr ""))
   (lib (name WemosS2)(type Legacy)(uri ${KIPRJMOD}/WEMOS_S2.lib)(options "")(descr ""))
   (lib (name TPS3700DDCR)(type Legacy)(uri ${KIPRJMOD}/TPS3700DDCR.lib)(options "")(descr ""))
+  (lib (name TMP36GT9Z)(type Legacy)(uri C:/Users/user/Desktop/Weather-Station-PCB/TMP36GT9Z.lib)(options "")(descr ""))
 )
