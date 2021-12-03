@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "Custom Libs")(type KiCad)(uri C:/Users/user/Desktop/Weather-Station-PCB)(options "")(descr ""))
+  (lib (name ESP32)(type KiCad)(uri C:/Users/user/Desktop/Weather-Station-PCB/WEMOS_S2.pretty)(options "")(descr ""))
 )
