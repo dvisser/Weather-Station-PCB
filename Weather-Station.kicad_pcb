@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 39)
+    (drawings 40)
     (tracks 0)
     (zones 0)
     (modules 69)
@@ -3003,6 +3003,8 @@
     )
   )
 
+  (gr_arc (start 103 94) (end 152.999599 94.199997) (angle -180.2291814) (layer Edge.Cuts) (width 0.05))
+  (gr_arc (start 103 94) (end 53 94) (angle -179.7708181) (layer Edge.Cuts) (width 0.05))
   (gr_text RTD2 (at 146.8 72.6 115) (layer F.SilkS) (tstamp 61AEBB30)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -3108,15 +3110,14 @@
   (gr_text PDB (at 80.8 50.4 207.5) (layer F.SilkS) (tstamp 61ADBE01)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "PV IN" (at 53.75 94.5 270) (layer F.SilkS) (tstamp 61AD8EAC)
+  (gr_text "PV IN" (at 53.8 94.5 270) (layer F.SilkS) (tstamp 61AD8EAC)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text - (at 54.75 97 90) (layer F.SilkS) (tstamp 61AD8EA9)
+  (gr_text - (at 54.8 97.2 90) (layer F.SilkS) (tstamp 61AD8EA9)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text + (at 54.75 92 90) (layer F.SilkS) (tstamp 61AD8EA6)
+  (gr_text + (at 55 92 90) (layer F.SilkS) (tstamp 61AD8EA6)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_circle (center 103 94) (end 153 94) (layer Edge.Cuts) (width 0.05) (tstamp 61ADADAA))
 
 )
